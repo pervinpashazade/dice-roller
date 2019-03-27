@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid mx-0">
+            <div class="row">
+                <div class="col-md-12 mx-0 px-0">
+                    <div class="pos-f-t">
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="bg-dark p-4">
+                                <h5 class="text-white h4">Dice Roller Game!</h5>
+                                <span class="text-muted">Code Academy - Group P-210.</span>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-dark bg-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid px-0 mx-0 index">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <section id="gameArea" class="pl-3 pt-3">
+
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    #1 Step: Terms and Conditions
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                                moon
+                                                tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                                labore
+                                                wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                                butcher
+                                                vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                                aesthetic
+                                                synth nesciunt you probably haven't heard of them accusamus labore
+                                                sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    #2 Step: Registration
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row my-2">
+                                                    <div class="col-md-6">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="player1NameInput">Player 1</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="player1NameInput"
+                                                                    placeholder="Please, enter your name">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="playerNameInput">Player 2</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="playerNameInput"
+                                                                    placeholder="Please, enter your name">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!-- button -->
+                                                    <div class="col-md-6 d-flex align-items-center">
+                                                        <button type="button"
+                                                            class="btn btn-outline-success mx-auto ">Success</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    #3 Step: Play
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row my-3">
+                                                    <div class="col-md-12">
+                                                        <div class="col-md-6 float-right">
+                                                            <button id="user1" type="button"
+                                                                class="btn btn-outline-success"
+                                                                onclick="diceRoll(this)">User 1</button>
+                                                        </div>
+                                                        <div class="col-md 6"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3">
+                                                    <div class="col-md-12">
+                                                        <div class="col-md-6"></div>
+                                                        <div class="col-md-6 float-right">
+                                                            <button id="user2" type="button"
+                                                                class="btn btn-outline-success"
+                                                                onclick="diceRoll(this)">User 2</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- dice roll css -->
+                        <div class="col-md-6">
+                            <div class="diceCss">
+                                <div id="background" class="container-fluid">
+                                </div>
+                                <div id="wrapper">
+                                    <div id="platform">
+                                        <div id="dice">
+                                            <div class="side front">
+                                                <div class="dot center"></div>
+                                            </div>
+                                            <div class="side front inner"></div>
+                                            <div class="side top">
+                                                <div class="dot dtop dleft"></div>
+                                                <div class="dot dbottom dright"></div>
+                                            </div>
+                                            <div class="side top inner"></div>
+                                            <div class="side right">
+                                                <div class="dot dtop dleft"></div>
+                                                <div class="dot center"></div>
+                                                <div class="dot dbottom dright"></div>
+                                            </div>
+                                            <div class="side right inner"></div>
+                                            <div class="side left">
+                                                <div class="dot dtop dleft"></div>
+                                                <div class="dot dtop dright"></div>
+                                                <div class="dot dbottom dleft"></div>
+                                                <div class="dot dbottom dright"></div>
+                                            </div>
+                                            <div class="side left inner"></div>
+                                            <div class="side bottom">
+                                                <div class="dot center"></div>
+                                                <div class="dot dtop dleft"></div>
+                                                <div class="dot dtop dright"></div>
+                                                <div class="dot dbottom dleft"></div>
+                                                <div class="dot dbottom dright"></div>
+                                            </div>
+                                            <div class="side bottom inner"></div>
+                                            <div class="side back">
+                                                <div class="dot dtop dleft"></div>
+                                                <div class="dot dtop dright"></div>
+                                                <div class="dot dbottom dleft"></div>
+                                                <div class="dot dbottom dright"></div>
+                                                <div class="dot center dleft"></div>
+                                                <div class="dot center dright"></div>
+                                            </div>
+                                            <div class="side back inner"></div>
+                                            <div class="side cover x"></div>
+                                            <div class="side cover y"></div>
+                                            <div class="side cover z"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1" target="_blank" href="http://facebook.com/pervin.pashazade">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" target="_blank" href="http://instagram.com/pervinpashazade">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1" target="_blank"
+                        href="https://www.youtube.com/user/Pervinofficial">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=994552790634">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1" target="_blank"
+                        onclick="alert('Email addres: ParvinKHp@code.edu.az')">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center">&copy; 2019 Copyright:
+            <a href="https://www.facebook.com/pervin.pashazade" target="_blank"> Pervin Pashazade</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- dice roll -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
